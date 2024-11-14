@@ -1,9 +1,16 @@
-import { SafeAreaView,View,Text ,StatusBar} from "react-native" 
+import { SafeAreaView,View,Text ,StatusBar, ScrollView, ImageBackground, Pressable} from "react-native" 
+import MobileHero from "./MobileHero"
+import MobileCategory from "./MobileCategory"
+import Mobilezx9 from "./Mobilezx9"
+
  export default function Home(){
     return(  <SafeAreaView className="flex-1 bg-red-700">
-    <View className=" bg-red-700 flex-1 justify-center items-center">
-     <Text className='text-white'>Home</Text>
-     <StatusBar style="auto" />
-   </View>
+     <ScrollView className="flex-1 h-full bg-blue-400">
+        
+       <MobileHero/>
+       <MobileCategory/>
+    
+    
+   </ScrollView>
   </SafeAreaView>)
  }
