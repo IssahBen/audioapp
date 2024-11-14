@@ -25,7 +25,7 @@ export default function MyTabs() {
           },
         }} />
       <Tab.Screen name="Earphones" component={Earphones} options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Earphones',
           tabBarIcon: ({ color, size }) => {
             return <Icon name="earbuds" size={size} color={color} />;
           },
