@@ -4,6 +4,7 @@ import Headphones from '../Headphones/Headphones';
 import Speakers from '../Speakers/Speakers';
 import Home from '../Home/Home';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Cart from '../Cart/Cart';
 const Tab = createBottomTabNavigator();
 
 export default function MyTabs() {
@@ -34,6 +35,12 @@ export default function MyTabs() {
           tabBarLabel: 'Speakers',
           tabBarIcon: ({ color, size }) => {
             return <Icon name="speaker" size={size} color={color} />;
+          },
+        }}  />
+      <Tab.Screen name="Cart" component={Cart} options={{
+          tabBarLabel: 'Cart',
+          tabBarIcon: ({ color, size }) => {
+            return <Icon name="cart" size={size} color={color} />;
           },
         }}  />
     </Tab.Navigator>
