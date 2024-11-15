@@ -8,13 +8,13 @@ import Mobilesummary from "./MobileSummary"
 import Mobilefooter from "./MobileFooter"
 import * as Animatable from "react-native-animatable"
 const cart =require("../../../assets/Home/shopping-cart.png")
- export default function Home(){
+ export default function Home({navigation}){
     return(  <View className="flex-1 bg-black">
       <StatusBar backgroundColor="black" barStyle={"light-content"}></StatusBar>
      <ScrollView className="flex-1  bg-black relative">
       
        <MobileHero/>
-       <MobileCategory/>
+       <MobileCategory navigation={navigation}/>
         <Mobilezx9/>
         <Mobilezx7/>
         <Mobileyx1/>

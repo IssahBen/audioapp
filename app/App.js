@@ -8,13 +8,13 @@ import Earphones from './components/Earphones/Earphones';
 import MyTabs from './components/Shared/Tab';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Stack from './components/Shared/Stack';
 const Tab = createBottomTabNavigator();
 export default function App() {
   verifyInstallation();
 
   return( 
     <NavigationContainer>
-      
      <MyTabs/>
 </NavigationContainer>)
 }
